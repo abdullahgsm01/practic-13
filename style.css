@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Open+Sans:wght@400;500;700;800&display=swap');
+h1,h2,h3,h4{
+	font-family: 'Gideon Roman';     
+}
+*{
+      margin:0;
+      padding: 0;
+      box-sizing: 0;
+}
+/* button style */
+.defoult-btn{
+      background:#ef664d;
+      color:#fff;
+      border: none;
+      padding: 10px 25px;
+      border-radius:5px;
+      position: relative;
+      z-index: 1;
+}
+.print-btn::before{
+      content:"";
+      height:0;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background:#a79e00;
+      border-radius: 5px;
+      z-index: -1;
+      transition: all 0.5s;
+}
+.print-btn:hover::before{
+      height:100%;
+}
+.web-btn::before{
+      content:"";
+      height:100%;
+      width:0;
+      position: absolute;
+      background:#a79e00;
+      border-radius: 5px;
+      z-index:-1;
+      top: 0;
+      right: 0;
+      transition: all 0.5s;
+}
+.web-btn:hover::before{
+      width: 100%;
+}
+.defoult-btn:hover::before{
+      width: 100%;
+}
+.dev-btn::before{
+      content:"";
+      height:100%;
+      width:0;
+      position: absolute;
+      top: 0;
+      left:0;
+      background:#a79e00;
+      border-radius: 5px;
+      z-index: -1;
+      transition: all 0.5s;
+}
+.dev-btn:hover:before{
+      width: 100%;
+}
+button.sub-btn{
+      padding: 8px 130px;
+      background:#ef664d;
+      border: none;
+      border-radius:5px;
+      margin: 20px 0 40px;
+      position: relative;
+      z-index: 1;
+      color: #fff;
+}
+button.sub-btn:before{
+      content:"";
+      position: absolute;
+      height: 100%;
+      width:0;
+      background:#3e12059f;
+      transition: all 0.5s;
+      z-index:-1;
+      top: 0;
+      left: 0;
+      border-radius: 5px 0 0 5px;
+      border-radius: 5px;
+}
+button.sub-btn:hover::before{
+      width: 100%;
+}
+button.sub-btn:after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 0%;
+      background:#3e12059f;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      border-radius:0 5px 5px 0;
+      transition: all 0.5s;
+      z-index: -1;
+      border-radius:5px;
+}
+button.sub-btn:hover::after{
+      width: 100%;
+}
+/* button style end */
+.logo img{
+      display: inline-block;
+      padding-top: 30px;
+}
+.menu ul{
+      
+}
+.menu ul li{
+      display: inline-block;
+}
+.menu ul li a{
+      display: inline-block;
+      padding:30px 20px;
+      color:#fff;
+      text-decoration: none;
+      transition: all 0.5s;
+}
+.menu ul li a:hover{
+      color:#ef664d;
+}
+/* hero -area */
+.hero-area {
+	background: url(./img/bg.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height: 60vh;
+	overflow: hidden;
+      background-attachment:scroll;
+}
+.hero-title h1 {
+	color: white;
+	font-size: 57px;
+	font-style: italic;
+	font-weight: 900;
+      text-align: center;
+      margin-top: 150px;
+}
+.hero-title h1::before {
+	content: "\f10d";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: #fb714a;
+	top: -20px;
+	position: relative;
+	left: 15px;
+}
+.hero-title h1::after {
+	content: "\f10e";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: #fb714a;
+	position: relative;
+	top: -20px;
+}
+/* about area */
+.about-area{
+      padding:80px 0;
+}
+.about-area img {
+	border: 3px solid #ed5539;
+      box-shadow: 6px 9px 22px #8b8b8b;
+}
+.about-area h2{
+      margin-left: 120px;
+}
+
+/* service area */
+.service-area{
+      background:#2e3e4e;
+      padding:80px 0;
+}
+.service-area h2 {
+	color:#ed5539;
+}
+.service-logo {
+      background: tomato;
+      height: 55px;
+      width: 75px;
+      display: inline-block;
+      padding-top: 16px;
+      border-radius: 0px 44px;
+      margin-bottom: 20px;
+  }
+  .service-logo i {
+      color: #fff;
+      display: block;
+      font-size: 20px;
+  }
+  .service-area h3 {
+	font-style: italic;
+	color: #fff;
+	font-weight: bold;
+      font-size:20px;
+      margin-bottom: 15px;
+}
+.service-area ul{
+      list-style: none;
+}
+.service-area ul li{
+      margin-bottom:10px;
+}
+.service-area ul li::before{
+      content: "\f560";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      color: #da594d;
+      margin: 0 11px;
+}
+.service-area ul li a{
+      text-decoration: none;
+      color: #fff;
+}
+.contact-wraper{ 
+}
+.contact-wraper h3 {
+	margin: 34px 0px;
+}
+.contact-wraper input{
+      display:block;
+      border: none;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ed5539;
+      width: 100%;
+}
+.contact-wraper input button{}
+.footer-area{
+      background:#2e3e4e;
+}
+footer span{
+      color:#da594d;
+}
