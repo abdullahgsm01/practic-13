@@ -16,6 +16,7 @@ h1,h2,h3,h4{
       border-radius:5px;
       position: relative;
       z-index: 1;
+      box-shadow: 6px 6px 10px #362a2a;
 }
 .print-btn::before{
       content:"";
@@ -74,6 +75,7 @@ button.sub-btn{
       position: relative;
       z-index: 1;
       color: #fff;
+      box-shadow: 6px 6px 10px #362a2a;
 }
 button.sub-btn:before{
       content:"";
@@ -113,9 +115,6 @@ button.sub-btn:hover::after{
       display: inline-block;
       padding-top: 30px;
 }
-.menu ul{
-      
-}
 .menu ul li{
       display: inline-block;
 }
@@ -134,17 +133,16 @@ button.sub-btn:hover::after{
 	background: url(./img/bg.jpg) no-repeat center center;
 	background-size: cover;
 	width: 100%;
-	height: 60vh;
 	overflow: hidden;
-      background-attachment:scroll;
+      background-attachment:fixed;
 }
 .hero-title h1 {
 	color: white;
 	font-size: 57px;
 	font-style: italic;
 	font-weight: 900;
-      text-align: center;
-      margin-top: 150px;
+	text-align: center;
+	padding: 171px 0 227px 0;
 }
 .hero-title h1::before {
 	content: "\f10d";
@@ -221,10 +219,11 @@ button.sub-btn:hover::after{
       text-decoration: none;
       color: #fff;
 }
-.contact-wraper{ 
-}
 .contact-wraper h3 {
 	margin: 34px 0px;
+}
+input:focus{
+      outline: none;
 }
 .contact-wraper input{
       display:block;
@@ -233,7 +232,6 @@ button.sub-btn:hover::after{
       border-bottom: 2px solid #ed5539;
       width: 100%;
 }
-.contact-wraper input button{}
 .footer-area{
       background:#2e3e4e;
 }
