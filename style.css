@@ -130,7 +130,7 @@ button.sub-btn:hover::after{
 }
 /* hero -area */
 .hero-area {
-	background: url(./img/bg.jpg) no-repeat center center;
+	background: url(./img/bg.jpg) no-repeat bottom center;
 	background-size: cover;
 	width: 100%;
 	overflow: hidden;
